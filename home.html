@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Welcome</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#1E212C">
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Ntech Lab</h1>
+		<h2>Страницы / Pages:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="index.html">Продукты</a></li>
+			<li><a target="_blank" href="ctBrain.html">Ntechmed CT Brain</a></li>
+			<li><a target="_blank" href="cultural.html">Культурная жизнь</a></li>
+			<li><a target="_blank" href="areas.html">Сферы применения</a></li>
+			<li><a target="_blank" href="clients.html">Клиенты</a></li>
+			<li><a target="_blank" href="about.html">О компании</a></li>
+			<li><a target="_blank" href="about.html">Связаться с нами</a></li>
+		</ol>
+	</div>
+	<script src="js/app.min.js?_v=20220125131450"></script>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background: #142152;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #00aeef;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #0087b8;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.info-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: 0px 0px 10px 0px;
+	}
+
+	.lang {
+		color: #00aeef;
+		margin: 0px 0px 10px 0px;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		padding: 0px 30px 0px 0px;
+		align-self: flex-start;
+	}
+
+	.lang::before {
+		content: '';
+		position: absolute;
+		background-color: #00aeef;
+		width: 10px;
+		height: 2px;
+		top: 50%;
+		right: 8px;
+		transform: rotate(45deg) translateY(-50%);
+	}
+
+	.lang::after {
+		content: '';
+		position: absolute;
+		background-color: #00aeef;
+		width: 10px;
+		height: 2px;
+		top: 50%;
+		right: 0;
+		transform: rotate(-45deg) translateY(-50%);
+	}
+
+
+	.lang._spoller-active::before {
+		transform: rotate(-45deg) translateY(-50%);
+		right: 5.5px;
+	}
+
+	.lang._spoller-active::after {
+		transform: rotate(45deg) translateY(-50%);
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.welcome {
+		font-size: 2rem;
+		margin: 0px 0px 20px 0px;
+
+	}
+
+	@media (max-width: 767px) {
+		.welcome {
+			font-size: 1.5rem;
+		}
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #00aeef;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #00aeef;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.about {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts a {
+		color: #00aeef;
+	}
+
+	.rootpage__contacts p {
+		line-height: 1.5em;
+	}
+</style>
+
+</html>
