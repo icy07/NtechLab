@@ -2654,6 +2654,10 @@ h6 {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
+
+  .clients__client {
+    min-height: 25rem;
+  }
 }
 
 @media (max-width: 53.125em) {
@@ -2969,6 +2973,11 @@ h6 {
   .clients__main {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .clients__client {
+    min-height: 21.875rem;
+    border-radius: 1.25rem;
   }
 
   .facts__main {
